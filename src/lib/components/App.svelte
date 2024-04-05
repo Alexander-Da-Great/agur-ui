@@ -30,42 +30,38 @@
 	}
 </script>
 
-<div class="md:hidden">
-</div>
-<div class="hidden md:block">
-	<Resizable.PaneGroup
-		direction="horizontal"
-		{onLayoutChange}
-		class="h-full max-h-[800px] items-stretch"
-	>
-		<Resizable.Pane
-			defaultSize={defaultLayout[0]}
-			collapsedSize={navCollapsedSize}
-			collapsible
-			minSize={15}
-			maxSize={20}
-			{onCollapse}
-			{onExpand}
-		>
-			<div
-				class={cn(
-					"flex h-[52px] items-center justify-center",
-					isCollapsed ? "h-[52px]" : "px-2"
-				)}
-			>
-			</div>
-      <Control></Control>
-			<Separator />
-			<Nav {isCollapsed} routes={primaryRoutes} />
-			<Separator />
-			<Nav {isCollapsed} routes={secondaryRoutes} />
-		</Resizable.Pane>
-		<Resizable.Handle withHandle />
-		<Resizable.Handle withHandle />
-		<Resizable.Pane defaultSize={defaultLayout[1]}>
-      <Canvas>
-        <Scene />
-      </Canvas>
-		</Resizable.Pane>
-	</Resizable.PaneGroup>
-</div>
+<Resizable.PaneGroup
+  direction="horizontal"
+  {onLayoutChange}
+  class="h-full items-stretch"
+>
+  <Resizable.Pane
+    defaultSize={defaultLayout[0]}
+    collapsedSize={navCollapsedSize}
+    collapsible
+    minSize={15}
+    maxSize={20}
+    {onCollapse}
+    {onExpand}
+  >
+    <div
+      class={cn(
+        "flex h-[52px] items-center justify-center",
+        isCollapsed ? "h-[52px]" : "px-2"
+      )}
+    >
+    </div>
+    <Control></Control>
+    <Separator />
+    <Nav {isCollapsed} routes={primaryRoutes} />
+    <Separator />
+    <Nav {isCollapsed} routes={secondaryRoutes} />
+  </Resizable.Pane>
+  <Resizable.Handle withHandle />
+  <Resizable.Handle withHandle />
+  <Resizable.Pane defaultSize={defaultLayout[1]}>
+    <Canvas>
+      <Scene />
+    </Canvas>
+  </Resizable.Pane>
+</Resizable.PaneGroup>
