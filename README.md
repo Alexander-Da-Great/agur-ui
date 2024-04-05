@@ -1,6 +1,6 @@
 # AGUR-UI
 
-A simple UI built using [svelte](https://svelte.dev) for 3d Modeling based on [threlte](https://threlte.xyz). Styling is handled using [tailwind css](https://tailwindcss.com).
+A simple UI built using [svelte](https://svelte.dev) for 3d Modeling based on [threlte](https://threlte.xyz). Styling is handled using [tailwind css](https://tailwindcss.com). UI components are leveraging [shadcn-svelte](https://www.shadcn-svelte.com/docs/installation).
 
 ### Purpose
 
