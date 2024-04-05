@@ -1,18 +1,10 @@
-# create-svelte
+# AGUR-UI
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A simple UI built using [svelte](https://svelte.dev) for 3d Modeling based on [threlte](https://threlte.xyz). Styling is handled using [tailwind css](https://tailwindcss.com).
 
-## Creating a project
+### Purpose
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+To implement a robust UI for 3d Modeling to serve as a scalable and generalizable UI for a network of docker containers to interact with. The loose idea is to allow one interface to elegantly call on micro-servervices which update layers of the interface without the need to develop many separate interfaces and apis ... need to work this part out. CONTAINERIZATION.
 
 ## Developing
 
@@ -27,7 +19,7 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+To create a production version of this app:
 
 ```bash
 npm run build
