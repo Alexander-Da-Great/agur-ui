@@ -33,6 +33,7 @@ declare module '$env/static/private' {
 	export const _P9K_TTY: string;
 	export const TERM: string;
 	export const SHELL: string;
+	export const npm_config_open: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
 	export const npm_config_global_prefix: string;
@@ -127,6 +128,7 @@ declare module '$env/dynamic/private' {
 		_P9K_TTY: string;
 		TERM: string;
 		SHELL: string;
+		npm_config_open: string;
 		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;
 		npm_config_global_prefix: string;
