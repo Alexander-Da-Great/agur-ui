@@ -8,7 +8,7 @@
 	import * as Resizable from "./ui/resizable/index.js";
 	import { Separator } from "./ui/select/index.js";
   import Nav from "./nav.svelte";
-
+  import { Color } from 'three';
 	export let defaultLayout = [265, 440, 655];
 	export let defaultCollapsed = false;
 	export let navCollapsedSize: number;
@@ -28,6 +28,7 @@
 		isCollapsed = false;
 		document.cookie = `PaneForge:collapsed=${false}`;
 	}
+  const bgColor = new Color('red');
 </script>
 
 <Resizable.PaneGroup
@@ -60,7 +61,11 @@
   <Resizable.Handle withHandle />
   <Resizable.Handle withHandle />
   <Resizable.Pane defaultSize={defaultLayout[1]}>
-    <Canvas>
+    <Canvas colorSpace={'srgb'}>
+      <color
+        attach="background"
+        args={[bgColor.r, bgColor.g, bgColor.b]}
+      />
       <Scene />
     </Canvas>
   </Resizable.Pane>

@@ -10,8 +10,8 @@
 >
   <OrbitControls
     autoRotate
-    enableZoom={false}
-    enableDamping
+    enableZoom={true}
+    enableDamping={false}
     autoRotateSpeed={0.5}
     target.y={1.5}
   />

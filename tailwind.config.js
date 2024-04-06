@@ -15,6 +15,8 @@ const config = {
 		},
 		extend: {
 			colors: {
+				pageStart: "hsl(var(--pageStart) / <alpha-value>)",
+				pageEnd: "hsl(var(--pageEnd) / <alpha-value>)",
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
